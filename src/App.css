@@ -1,3 +1,89 @@
+/* Global Styles */
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 24px;
+  color: #444;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Button Styling */
+button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #387b32;
+}
+
+/* Answer Text Styling */
+p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 20px;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+
+p.yes-answer {
+  color: #4caf50; /* Green for "Yes" answers */
+}
+
+p.no-answer {
+  color: #f44336; /* Red for "No" answers */
+}
+
+/* Add smooth fade transition */
+.container p {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
+}
+
+/* custom css */
 .App {
   text-align: center;
 }
